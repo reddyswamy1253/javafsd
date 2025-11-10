@@ -1,0 +1,130 @@
+
+Data type in python defines the type of value a variable can hold. Different types of data types are int, float, bool, str, complex.
+
+
+
+
+int: represents whole numbers ex: 1,2,10,100.
+float: represents decimal numbers also known as continuous. ex:3.14
+complex: represents complex numbers ex: 2+3j, 4-5j.
+boolean: represents true or flase values ex: True, False
+string: represents group of characters ex:"swamy", "reddy".
+
+
+
+a=2+3j
+print("real part",a.real)
+print("imaginary part",a.imag)
+
+
+a = 123
+b = 123.233
+c = 2+3j
+d = True
+e = "44"
+f = "cedlern"
+print("a:",type(a),id(a))
+print("b:",type(b),id(b))
+print("c:",type(c),id(c))
+print("d:",type(d),id(d))
+print("e:",type(e),id(e))
+print("f:",type(f),id(f))
+   
+Typecasting is the process of converting one date type into another data type. 
+example 1:
+x="100"
+y=int(x) # y becomes integer as 100
+z=float(x) #z becomes float as 100.0
+
+example 2:
+a=5
+b=str(a) #b becomes string "5"
+
+
+a="4"   #possible
+a_1=int(a)  #as string is numeric. so we can convert it into integer
+
+b=False #possible
+b_2=int(b) #as false can be written as 0 in numeric form. so it becomes 0
+
+c="true" #not possible as it is string and not in numeric.
+
+d="78.99"    #not possible
+d_4=int(d) # string is in float format
+
+e=3+4j #not possible , we cannot convert complex into int
+
+
+
+
+a="3"   #possible
+a_1=float(a)  #as string is numeric. so we can convert it into float
+
+b=True #possible
+b_2=float(b) #as false can be written as 0 in numeric form. so it becomes 1.0
+
+c="flase" #not possible as it is string and not in numeric.
+
+d="8.99"    #possible
+d_4=float(d) # string is in float format.
+
+e=8+4j #not possible , we cannot convert complex into float.
+
+f=45   #possible
+f_6=float(f) #int can be converted to float.
+
+g="2+3i" #not possible. in string foramt and also complex number.can not be converted into float
+
+
+
+a="34"   #possible
+a_1=bool(a)  #every non empty string is possible
+
+b=False #possible
+b_2=bool(b) #every non empty string is possible
+
+c="true" #possible
+c_3=bool(c)#every non empty string is possible
+
+d="7.99"    #possible
+d_4=int(d) # every non empty string is possible
+
+e=5+4j #possible
+e_5=bool(e) #every non empty complex number is possible
+
+f=3.4
+f_6=bool(e) #every non zero float is possible
+
+
+
+a="314"   #possible as 314+0j
+a_1=complex(a)  #numeric string can be converted to complex.
+
+b=False #possible 0+0j
+b_2=complex(b) #bool can be converted into complex
+
+c="true" #not possible
+c_3=bool(c)#string is not numeric
+
+d="78.99"    #possible
+d_4=int(d) # numeric string can be converted into complex.
+
+e='3+4j' #possible
+e_5=bool(e) #correct format of a string to convert into complex
+
+f=33.0  #possible
+f_6=bool(e) # float is possible
+
+
+
+
+
+a=314 #possible
+b=False
+c=78.99
+d=3+4j
+
+#any type of value can be converted into string
+
+
+
